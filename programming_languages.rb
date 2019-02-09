@@ -7,7 +7,7 @@ def reformat_languages(languages)
       second_level.each do |language_name, type_hash| 
           type_hash.each do |k, v| 
             if new_hash[language_name] == nil 
-              new_hash[language_name] = {k=>v, :style=> top_level}}
+              new_hash[language_name] = {k=>v, :style=> [top_level]}
             else new_hash[language_name][:style] << [top_level]
             end 
           end

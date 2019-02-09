@@ -9,7 +9,7 @@ def reformat_languages(languages)
             if new_hash[language_name] == nil 
               new_hash[language_name] = {k=>v, :style=> [top_level]}
             else 
-              new_hash[language_name][:style] << [top_level]
+              new_hash[language_name][:style] << top_level
               binding.pry
             end
           end
